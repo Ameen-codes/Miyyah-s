@@ -374,6 +374,11 @@ h1 span{
         text-align: center;
         font-family: ubuntu;
       }
+
+      #cu a{
+        color: white;
+      }
+      
      footer #socials {
         align-items: center;
         display: inline-block;
