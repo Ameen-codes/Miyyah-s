@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listings</title>
+</head>
+<link rel="stylesheet" href="halls.css">
+<body>
+
+    <!-- LOADING EFFECT -->
+
+    
+    <div class="loader ">
+
+      <h1 id="loader">
+          <span>M</span>
+          <span>I</span>
+          <span>Y</span>
+          <span>Y</span>
+          <span>A</span>
+          <span>H</span>
+          <span>'</span>
+          <span>S</span>
+         </h1> 
+
+  </div>
+  
+  
+  <!-- Side Curtain Menu -->
+  <div id="menu" class="menu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#cu">Contact</a></li>
+        <li><a href="halls.html">Listings</a></li>
+        <li><a href="#">Need a Caterer?</a></li>
+        <!-- <li><a href="#">Ratings and Feedback</a></li> -->
+    </ul>
+</div>
+
+  
+  <div class="content">
+      <!-- Menu Button -->
+      <span onclick="openMenu()">&#9776; Miyyah's</span>
+    
+  </div>
+
+
+  <header>
+      <h1><a href="index.html">Miyyah's</a></h1>
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#cu">Contact</a>
+          <a href="index.html#services">Services</a>
+          <a href="halls.html">Listings</a>
+      </nav>
+      <button><a href="./register.html">Register</a></button>
+  </header>
+
+      
+
+
+
+
+    <main>
+      
+        <div class="halls">
+
+            <div class="item">
+
+                <span>&#9776;</span>
+                
+                <img src="images/hall1.jpg" alt="">
+
+                <button >book venue</button>   
+            </div>
+            
+            <div class="item">
+                <img src="images/hall2.jpeg" alt="">
+
+                <span>&#9776;</span>
+
+                <button>book venue</button>   
+            </div>
+
+            <div class="item">
+                <img src="images/hall3.jpeg" alt="">
+
+                <span>&#9776;</span>
+
+                <button>book venue</button>   
+            </div>
+
+            <div class="item">
+                <img src="images/hall4.jpeg" alt="">
+
+                <span>&#9776;</span>
+                
+
+                <button>book venue</button>   
+            </div>
+
+            <div class="item">
+                <img src="images/hall5.jpeg" alt="">
+
+                <span>&#9776;</span>
+
+                <button>book venue</button>   
+            </div>
+
+            <div class="item">
+                <img src="images/hall6.jpeg" alt="">
+
+                <span>&#9776;</span>
+
+                <button>book venue</button>   
+            </div>
+
+        </div>
+
+        <div class="req_field">
+
+
+            <form id="request_form" action="https://formspree.io/f/xbjnjgyk" method="post" name="Request">
+                
+                <textarea name="New_Request" id="New_Request" cols="30" rows="10" placeholder="Do you have specific requests?If so,let us know below..."></textarea>
+
+                <button type="submit" name="requests" id="request_btn">Send</button>
+
+                
+            </form>
+
+            <p id="note">
+                <span id="note_bold">Note:</span>
+
+                These are only a few of our venues and halls, please note that we can get any location/hall/venue for you in the country as long as they're available from the Service Provider.
+
+                We can also render your Dj services.
+
+            </p>
+            
+
+        </div>
+
+  
+      </main>
+    
+</body>
+
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+        <!-- LOADING EFFECT -->
+
+    
+        <div class="loader ">
+
+            <h1 id="loader">
+                <span>M</span>
+                <span>I</span>
+                <span>Y</span>
+                <span>Y</span>
+                <span>A</span>
+                <span>H</span>
+                <span>'</span>
+                <span>S</span>
+               </h1> 
+    
+        </div>
+        
+        
+        <!-- Side Curtain Menu -->
+        <div id="menu" class="menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#cu">Contact</a></li>
+                <li><a href="halls.html">Listings</a></li>
+                <li><a href="#">Need a Caterer?</a></li>
+                <!-- <li><a href="#">Ratings and Feedback</a></li> -->
+            </ul>
+        </div>
+    
+        
+        <div class="content">
+            <!-- Menu Button -->
+            <span onclick="openMenu()">&#9776; Miyyah's</span>
+          
+        </div>
+    
+    
+        <header>
+            <h1><a href="index.html">Miyyah's</a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#cu">Contact</a>
+                <a href="index.html#services">Services</a>
+                <a href="halls.html">Listings</a>
+            </nav>
+            <button><a href="./register.html">Register</a></button>
+        </header>
+
+
+    
+    <main>
+        <h1>Sign Up Or Login To Continue</h1>
+
+        <div class="form">
+
+            <div class="form_img">
+                <img src="images/login.svg" alt="sign up" id="img1">
+                <img src="images/Computer login-amico.svg" alt="sign up" id="img2">
+            </div>
+
+            <div class="formu">
+            <form action="">
+
+             <input type="text" placeholder="enter your name" required>
+
+            <input type="email" placeholder="enter e-mail or phone" required>
+
+
+            <h2>Gender</h2>
+
+            <input type="radio" id="male" name="gender">male
+
+            <input type="radio" id="female" name="gender">female <br><br>
+            
+            <label for="states">state of residence</label>
+
+            <select name="states" id="states">
+                <option value="" >Select state</option>   
+                <option value="" >Abia</option>   
+                <option value="" >Adamawa</option>
+                <option value="" >Akwa Ibom</option>
+                <option value="" >Anambra</option>
+                <option value="" >Bauchi</option>
+                <option value="" >Bayelsa</option>
+                <option value="" >Benue</option>
+                <option value="" >Borno</option>
+                <option value="" >Cross River</option>
+                <option value="" >Delta</option>
+                <option value="" >Ebonyi</option>
+                <option value="" >Edo</option>
+                <option value="" >Ekiti</option>
+                <option value="" >Enugu</option>
+                <option value="" >FCT</option>
+                <option value="" >Gombe</option>
+                <option value="" >Imo</option>
+                <option value="" >Jigawa</option>
+                <option value="" >Kaduna</option>
+                <option value="" >Kano</option>
+                <option value="" >Katsina</option>
+                <option value="" >Kebbi</option>
+                <option value="" >Kogi</option>
+                <option value="" >Kwara</option>
+                <option value="" >Lagos</option>
+                <option value="" >Nassarawa</option>
+                <option value="" >Niger</option>
+                <option value="" >Ogun</option>
+                <option value="" >Ondo</option>
+                <option value="" >Osun</option>
+                <option value="" >Oyo</option>
+                <option value="" >Plateau</option>
+                <option value="" >Rivers</option>
+                <option value="" >Sokoto</option>
+                <option value="" >Taraba</option>
+                <option value="" >Yobe</option>
+                <option value="" >Zamfara</option>
+            </select>
+            
+            <button type="submit" id="sub">Submit</button>
+
+            
+
+            </form>
+        </div>
+
+        </div>
+        
+    </main>
+
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,490 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff; 
+    --bg-color:#140D27;
+    
+  }
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu;
+    background-color: #140D27;
+    color: white;
+}
+
+.ameen div{
+    margin:20px 20px  20px;
+}
+
+
+img{
+    width: 82.50%;
+    height: 46.22%;
+}
+
+.slides img{
+    width: 100vw;
+    height: 50vh;
+}
+
+
+@font-face{
+    font-family: happy food;
+    src: url(happy-food/Happy\ Food.otf);
+}
+
+@font-face{
+    font-family: ubuntu;
+    src: url(Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face{
+    font-family: euro;
+    src: url(europe-underground/EuropeUnderground_black.ttf);
+}
+
+
+/* LOADING EFFECT */
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: opacity 2s, visibility 1s;
+}
+
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+#loader span{
+  text-transform: lowercase;
+  font-family: happy food;
+  font-weight: bold;
+  position: relative;
+  top: 30px;
+  font-size: 50px;
+  color: #f2f2f2;
+  display: inline-block;
+  animation: move 0.5s ease-in-out infinite alternate;
+  z-index: 100;
+}
+
+h1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+h1 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+h1 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+h1 span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+
+@keyframes move {
+  100% {
+    top: -30px;
+    text-shadow: 0 2px 0 grey, 0 4px 0 yellow, 0 6px 0 deeppink, 0 8px 0 orange,
+      0 10px 0 crimson, 0 12px 0 hotpink, 0 14px 0 teal, 0 16px 0 purple, 0 18px 0 lightgreen,
+      0 50px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes left {
+    0%{
+        margin-left: -500px;
+    }
+
+    
+    50%{
+        margin-left: 0;
+    }
+
+    90%{
+        transform: rotate(30deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+}
+
+
+
+/* Styles for the Side Curtain Menu */
+.menu {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+menu:hover{
+    text-decoration: underline;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* STYLE FOR THE CONTENT */
+
+.content {
+    padding: 10px;
+    top: 0px;
+}
+
+
+/* Styles for Menu Button */
+.content span {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header h1{
+    position: relative;
+    animation: left 2s alternate;
+    
+}
+
+header h1 a{
+    color: white;
+}
+
+.info span{
+    font-size: 25px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav a{
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+
+header button{
+    width: 152px;
+    height: 46.84px;
+    border-radius: 4px;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    border: none;
+    font-family: 'Trebuchet MS',ubuntu, sans-serif;
+    font-size: 1rem;
+    line-height: 17px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+header button:hover{
+    background: none;
+    border:1px solid white;
+    font-size: 1.5rem;
+    scale: 1.1;
+    transition: 0.2s ease-in-out;
+}
+
+header button a{
+    color: white;
+    text-decoration: none;
+
+}
+
+header a {
+    text-decoration: none;
+}
+
+header > nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+p,h1,button{
+    text-align: center;
+}
+
+
+
+h1 span{
+        color: #D434FE;
+    }
+
+    main .big_idea{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        /* margin-top: 50px; */
+        margin:100px 30px  50px;
+        
+    }
+
+    .info p{
+      text-align: center;
+    }
+
+    .info h1{
+      text-align: center;
+    }
+
+    
+
+    #services p{
+        text-align: left;
+        border-bottom:2px solid white ;
+        line-height: 30px;
+        text-transform: capitalize;
+    }
+
+    .services_info p span{
+        color: white;
+        margin-left: 90%;
+    }
+
+    .widgets{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .widgets .box{
+        background-color: #555;
+    }
+
+    .widgets h1{
+        color: #140D27;
+    }
+
+
+   footer #footer {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        background-color: #6a30b4;
+        color: #e3dcd2;
+        align-items: center;
+        width: 99.9%;
+        gap: 50px;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      footer #title {
+        display: inline block;
+      }
+      footer #title span {
+        display: flex;
+      }
+      footer #title span img {
+        width: 50px;
+        height: 50px;
+      }
+     footer #about {
+        width: 300px;
+        display: inline-block;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 2rem;
+        font-family: ubuntu;
+      }
+      #cu {
+        /* width: 230px;
+        height: 35vh; */
+        display: inline-block;
+        text-align: center;
+        font-family: ubuntu;
+      }
+      #cu h2 {
+        text-align: center;
+        font-family: ubuntu;
+      }
+     footer #socials {
+        align-items: center;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      footer #socials h2 {
+        margin-bottom: 0;
+        margin-top: 5px;
+        text-align: center;
+      }
+     footer #socials span {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      footer #socials span img {
+        width: 40px;
+      }
+
+      footer #about a{
+        color: white;
+        text-decoration: underline;
+      }
+
+
+      #footer h2{
+        font-family: ubuntu;
+      }
+
+      #ref{
+        color: #000;
+        text-decoration-color: #000;
+      }
+
+
+
+
+
+       /* MEDIA QUERIES */
+
+@media all and (min-width:600px) {
+
+    .menu,.content{
+        display: none;
+        
+    }
+
+    
+    .slides img{
+        width: 95vw;
+        height: 100vh;
+    }
+
+    header h2{
+        margin-right: 16rem;
+    }
+    
+}
+
+
+
+/* MOBILE VIEW */
+
+@media all and (max-width:600px) {
+    header nav,header h1{
+        display: none;
+    }
+
+    header button{
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        scale: 0.8;
+    }
+    
+    .widgets{
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+ /* DESKTOP VIEW  */
+
+ @media all and (min-width:600px){
+        
+    main .big_idea {
+         flex-flow: row;
+         /* margin:100px 50px  50px; */
+     }
+
+     main .big_idea div{
+         width: 50%;
+     }
+
+     main .services{
+         display: flex;
+         flex-flow: row;
+         align-items: center;
+         /* margin:5% 5%; */
+     }
+
+     main .services div{
+         width: 50%;
+     
+     }
+     
+     main .services div img{
+         width: 100%;
+     }
+
+     
+ } 
+
+
