@@ -189,6 +189,9 @@ menu:hover{
 /* STYLE FOR THE CONTENT */
 
 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     top: 0px;
 }
@@ -196,7 +199,21 @@ menu:hover{
 
 /* Styles for Menu Button */
 .content span {
-    font-size: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#big_btn{
+    width: 120px;
+    height: 46.84px;
+    border-radius: 4px;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    border: none;
+    font-family: 'Trebuchet MS',ubuntu, sans-serif;
+    font-size: 1rem;
+    line-height: 17px;
+    text-align: center;
+    color: white;
     cursor: pointer;
 }
 
@@ -207,7 +224,7 @@ header {
     padding: 20px 40px;
 }
 
-header h1{
+header h1 #event{
     position: relative;
     animation: left 2s alternate;
     
@@ -259,14 +276,15 @@ header button:hover{
     transition: 0.2s ease-in-out;
 }
 
-header button a{
+header button a,#big_btn a{
     color: white;
     text-decoration: none;
-
+    font-size: 1.2rem;
 }
 
 header a {
     text-decoration: none;
+    font-weight: bold;
 }
 
 header > nav > ul {
@@ -443,7 +461,7 @@ h1 span{
 /* MOBILE VIEW */
 
 @media all and (max-width:600px) {
-    header nav,header h1{
+    header{
         display: none;
     }
 
@@ -458,6 +476,7 @@ h1 span{
         display: flex;
         flex-flow: column;
     }
+
 }
 
  /* DESKTOP VIEW  */

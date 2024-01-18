@@ -275,6 +275,7 @@ body{
     padding: 10px;
     gap: 20px;
     flex-wrap: wrap;
+    
 }
 
 .halls div{
@@ -285,7 +286,7 @@ body{
 
 }
 
-.halls div:hover{
+.halls .item img:hover{
     scale: 1.1;
     transition: 0.5s ;
     box-shadow: 0 0 15px black;
@@ -424,3 +425,6 @@ button{
    
     
 }
+
+
+

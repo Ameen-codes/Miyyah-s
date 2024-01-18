@@ -48,3 +48,18 @@ request_form.addEventListener("submit", function(event) {
     }, 500);
 }
 });
+
+
+// ACCORDION
+
+function toggleAccordion(variable) {
+  // Get the next sibling, which is the content div
+  var content = variable.nextElementSibling;
+
+  // Toggle the display property of the content
+  if (content.style.display === "block") {
+    content.style.display = "none";
+  } else {
+    content.style.display = "block";
+  }
+}
